@@ -3,15 +3,14 @@ package obsidian
 import (
 	"encoding/json"
 	"errors"
-	"github.com/Yakitrak/obsidian-cli/pkg/config"
 	"os"
 	"strings"
+
+	"github.com/ubuntupunk/obsidian-cli/config"
 )
 
-var ObsidianConfigFile = config.ObsidianFile
-
 func (v *Vault) Path() (string, error) {
-	obsidianConfigFile, err := ObsidianConfigFile()
+	obsidianConfigFile, err := config.ObsidianFile()
 	if err != nil {
 		return "", err
 	}

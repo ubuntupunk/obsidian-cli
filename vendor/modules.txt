@@ -1,3 +1,9 @@
+# github.com/Yakitrak/obsidian-cli v0.1.7
+## explicit; go 1.19
+github.com/Yakitrak/obsidian-cli/mocks
+github.com/Yakitrak/obsidian-cli/pkg/actions
+github.com/Yakitrak/obsidian-cli/pkg/config
+github.com/Yakitrak/obsidian-cli/pkg/obsidian
 # github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 ## explicit
 github.com/davecgh/go-spew/spew

@@ -2,9 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/Yakitrak/obsidian-cli/pkg/obsidian"
-	"github.com/spf13/cobra"
 	"log"
+
+	"github.com/spf13/cobra"
+	"github.com/ubuntupunk/obsidian-cli/pkg/obsidian"
 )
 
 var printDefaultCmd = &cobra.Command{

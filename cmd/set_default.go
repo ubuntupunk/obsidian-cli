@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
+	"github.com/spf13/cobra"
 	"github.com/ubuntupunk/obsidian-cli/config"
 	"github.com/ubuntupunk/obsidian-cli/pkg/obsidian"
-	"github.com/spf13/cobra"
 )
 
 // VaultWrapper wraps the obsidian.Vault and provides additional methods

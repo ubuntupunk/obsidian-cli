@@ -1,10 +1,10 @@
 package cmd
 
 import (
-	"github.com/ubuntupunkobsidian-cli/pkg/actions"
-	"github.com/ubuntupunk/obsidian-cli/pkg/obsidian"
-	"github.com/spf13/cobra"
 	"log"
+	"github.com/spf13/cobra"
+	"github.com/ubuntupunk/obsidian-cli/pkg/actions"
+	"github.com/ubuntupunk/obsidian-cli/pkg/obsidian"
 )
 
 var vaultName string
