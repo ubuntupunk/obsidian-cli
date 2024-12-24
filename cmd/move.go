@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/Yakitrak/obsidian-cli/pkg/actions"
-	"github.com/Yakitrak/obsidian-cli/pkg/obsidian"
+	"github.com/ubuntpunk/obsidian-cli/pkg/actions"
+	"github.com/ubuntpunk/obsidian-cli/pkg/obsidian"
 	"log"
 
 	"github.com/spf13/cobra"
@@ -25,7 +25,7 @@ var moveCmd = &cobra.Command{
 			NewNoteName:     newName,
 			ShouldOpen:      shouldOpen,
 		}
-		err := actions.MoveNote(&vault, &note, &uri, params)
+		err := actions.MoveNote(&vault, &uri, params)
 		if err != nil {
 			log.Fatal(err)
 		}

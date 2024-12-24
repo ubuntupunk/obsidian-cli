@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/Yakitrak/obsidian-cli/pkg/actions"
-	"github.com/Yakitrak/obsidian-cli/pkg/obsidian"
+	"github.com/ubuntupunk/obsidian-cli/pkg/actions"
+	"github.com/ubuntupunk/obsidian-cli/pkg/obsidian"
 	"log"
 
 	"github.com/spf13/cobra"

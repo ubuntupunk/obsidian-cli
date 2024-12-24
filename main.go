@@ -1,7 +1,24 @@
 package main
 
-import "github.com/Yakitrak/obsidian-cli/cmd"
+import (
+	"fmt"
+	"log"
+	"os"
+
+	"github.com/ubuntupunk/obsidian-cli/cmd"
+	"github.com/ubuntupunk/obsidian-cli/config"
+)
 
 func main() {
-	cmd.Execute()
+	// Initialize configuration
+	cfg, err := config.InitConfig()
+	if err != nil {
+		log.Fatalf("Error initializing config: %v", err)
+	}
+
+	// Execute root command
+	if err := cmd.Execute(cfg); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
 }
